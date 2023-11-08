@@ -90,3 +90,21 @@ h1{
     color: white;
     font-weight:900;
 }
+
+/* Seccion Result */
+#result{
+    display: flex;
+}
+.cuadrado {
+    width: 90px;
+    height: 90px;
+    background-color: #bcbcbc;
+    border-radius: 12px;
+    margin-right: 20px;
+    margin-top: 20px;
+  }
+  
+  .columna {
+    display: flex;
+    flex-direction: row;
+  }
