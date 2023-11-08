@@ -20,7 +20,7 @@
             <p id="codigo_numero">*</p>
         </div>
         <div id="codigo_celda">
-            <p id="codigo_numero">9</p>
+            <p id="codigo_numero">*</p>
         </div>
         <div id="codigo_celda">
             <p id="codigo_numero">*</p>
@@ -32,16 +32,18 @@
     <!-- Seccion COMPROBAR -->
     <div id="comprobar">
         <p id="comprobar_titulo">Escribe aquí su numero</p>
-        <form id="inputNumero" onsubmit="" action="">
-            <input type="text" name="nom" value="01234" id="comprobar_numero">
+        <form id="inputNumero"  action="javascript:prenValorForm()">
+            <input type="text" name="numero" value="01234" id="comprobar_numero">
             <br>
-            <input type="submit" value="Comprobar" id="comprobar_boton">
+            <input type="submit" value="comprobar" id="comprobar_boton">
         </form>
     </div>
     <!-- Seccion INFO -->
     <div id="info">
         <p>Primer intento, suerte!</p>
     </div>
+    <!-- Seccion RESULT -->
+    <div id="contenedor"></div>
 </body>
 
 </html>
