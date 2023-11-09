@@ -105,7 +105,7 @@ function mostrarImagenVictoria() {
 }
 function mostrarImagenDerrota() {
   setTimeout(() => {
-    const imgVictoria = document.getElementById('imgVictoria');
+    const imgVictoria = document.getElementById('imgDerrota');
     imgVictoria.style.left = '450px';
     imgVictoria.style.top = '100px';
     imgVictoria.style.transform = 'translate(-50%, -50%)';
