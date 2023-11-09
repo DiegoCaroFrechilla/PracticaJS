@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100&family=Maven+Pro:wght@400;700&display=swap&#39;');
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;400&family=Maven+Pro:wght@400;700&display=swap&#39;');
 
-
 body{
     display: flex;
     flex-direction: column;
@@ -26,14 +25,16 @@ h1{
     background-color: #1aa1f0;
     border-radius: 12px;
     margin-right: 20px;
+
 }
+
 #codigo_numero{
     text-align: center;
     font-weight:bolder;
     font-size:xx-large;
     margin-bottom: 20px;
     margin-top: 20px;
-}
+} 
 /* Seccion COMPROBAR */
 #comprobar{
     justify-content: center;
@@ -90,6 +91,11 @@ h1{
     color: white;
     font-weight:900;
 }
+.reiniciar{
+    background-color: white;
+    border-radius: 10px;
+    margin-left: 20px;
+}
 
 /* Seccion Result */
 #result{
@@ -102,9 +108,42 @@ h1{
     border-radius: 12px;
     margin-right: 20px;
     margin-top: 20px;
-  }
+    transform: translate(-50%, -50%);
+    display: none;
+    position: relative;
+    top: 50px;
+    left: 50px;
+}
   
-  .columna {
+@keyframes slide-fwd-center {
+    0% {
+        transform: translate(-50%, 200%);
+        opacity: 0;
+    }
+    100% {
+        transform: translate(-50%, -50%);
+        opacity: 1;
+    }
+}
+  
+  .fila {
     display: flex;
     flex-direction: row;
   }
+/* Imagenes */
+#imgVictoria{
+    display: none;
+    height: 720px;
+    width: 900px;
+    z-index: 9999;
+    margin-top: 20px;
+    border-radius: 20%;
+}
+#imgDerrota{
+    display: none;
+    height: 720px;
+    width: 900px;
+    z-index: 9999;
+    margin-top: 20px;
+    border-radius: 20%;
+}
